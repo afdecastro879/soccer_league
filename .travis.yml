@@ -12,4 +12,4 @@ before_script:
 - export GitVersion_FullSemVer=$(docker run --rm -v "$(pwd):/repo" gittools/gitversion:5.0.0-linux-debian-9-netcoreapp2.2 /repo -output json -showvariable FullSemVer)
 
 script:
-- python tests
+- python tests.py
